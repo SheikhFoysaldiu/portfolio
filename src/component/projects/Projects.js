@@ -25,7 +25,7 @@ function Projects() {
 
     const apiKey = process.env.REACT_APP_API_KEY;
     const username = process.env.REACT_APP_USER_NAME;
-    console.log(apiKey)
+ 
     const apiUrl = `https://api.github.com/users/${username}/repos?sort=created&direction=desc&per_page=3`;
     useEffect(()=>{
      const  fetchAndDisplayRepositories = async ()=> {
@@ -48,10 +48,10 @@ function Projects() {
         console.error('Error:', error);
     }
 }
-    return()=>{
-         fetchAndDisplayRepositories()
-    }
-    },[])
+
+    fetchAndDisplayRepositories()
+
+    },[apiKey, apiUrl])
 
   return (
     <>
