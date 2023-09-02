@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import Divider from "../divider/Divider";
+import Typewriter from 'typewriter-effect';
 
 
 const Hero = () => {
@@ -37,14 +38,19 @@ const Hero = () => {
 				lg:justify-items-end
 			"
         >
-          <h1 className="text-4xl sm:text-7xl font-extrabold font-sans mb-4 tracking-tight lg:tracking-normal text-neutral-900 dark:text-neutral-100">
+          <div className="text-4xl sm:text-7xl font-extrabold font-sans mb-4 tracking-tight lg:tracking-normal text-neutral-900 dark:text-neutral-100">
             Hello, My Name is
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
-              {" "}
-              Sheikh Foysal
-            </span>
-            .
-          </h1>
+            <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+              <Typewriter
+                options={{
+                  strings: ["Sheikh Foysal"],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </h1>
+          </div>
+
           <p className="text-base sm:text-xl tracking-tight lg:justify-self-end text-neutral-900 dark:text-neutral-100">
             I'm a Data Scientist living in Dhaka, Bangladesh.
           </p>
@@ -104,11 +110,11 @@ const Hero = () => {
         </div>
 
         <img
-          src={ require("../../assets/user.jpg")}
+          src={require("../../assets/user.jpg")}
           className="
 				scale-90
 				lg:scale-100
-				lg:basis-1/3
+				lg:basis-1/4
 				bg-cover 
 				bg-center 
 				bg-clip-border 
@@ -122,7 +128,7 @@ const Hero = () => {
           alt="Photo_SheikhFoysal."
         />
       </section>
-      <Divider/>
+      <Divider />
     </>
   );
 };

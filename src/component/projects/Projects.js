@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 
 const SingleRepo = ({item}) =>{
     return(
-        <li  class="my-4 md:border-l-4 border-neutral-200 dark:border-neutral-800 md:pl-2 hover:bg-neutral-200 dark:hover:bg-neutral-800">
-        <a class="" href="https://github.com/a-poor/watercooler">
-            <h3 class="text-lg font-semibold underline decoration-dotted">
+        <li  className="my-4 md:border-l-4 border-neutral-200 dark:border-neutral-800 md:pl-2 hover:bg-neutral-200 dark:hover:bg-neutral-800">
+        <a className="" href="https://github.com/a-poor/watercooler">
+            <h3 className="text-lg font-semibold underline decoration-dotted">
                 {item.name}
             </h3>
-            <p class="text-sm tracking-tight">
+            <p className="text-sm tracking-tight">
                 {item.description}
             </p>
         </a>
@@ -55,18 +55,18 @@ function Projects() {
 
   return (
     <>
-    <section class="max-w-4xl mx-auto px-4 tracking-tight mb-12 flex flex-col md:flex-row text-zinc-800 dark:text-neutral-200">
-		<div class="flex-grow text-center md:text-left">
-			<h2 class="text-4xl font-bold tracking-wide">
+    <section className="max-w-4xl mx-auto px-4 tracking-tight mb-12 flex flex-col md:flex-row text-zinc-800 dark:text-neutral-200">
+		<div className="flex-grow text-center md:text-left">
+			<h2 className="text-4xl font-bold tracking-wide">
 				Projects
 			</h2>
-			<p class="text-lg">
+			<p className="text-lg">
 				Check out some of the projects I've been working on recently!
 			</p>
-			<p class="mb-4 text-lg">
+			<p className="mb-4 text-lg">
 				Here are some of my latest projects:
 			</p>
-			<ul class="list-none list-inside mb-8">
+			<ul className="list-none list-inside mb-8">
 				{
                     repo.map((item)=>
                         <SingleRepo key={item.id} item={item}/>
@@ -76,7 +76,7 @@ function Projects() {
 			</ul>
 		</div>
 		<div>
-			<Link class="
+			<Link className="
 					flex 
 					w-fit
 					mx-auto
@@ -96,11 +96,11 @@ function Projects() {
 					hover:shadow-lg
 					hover:shadow-purple-500/50
 				" to="/projects">
-				<span class="tracking-tight font-semibold">
+				<span className="tracking-tight font-semibold">
 					More projects
 				</span>
-				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"  strokeWidth="1.5" stroke="currentColor" className="w-6 h-6">
+					<path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
 				</svg>
 			</Link>
 		</div>

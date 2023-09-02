@@ -5,10 +5,10 @@ import Divider from '../divider/Divider';
 const AboutMe = () => {
   return (
     <>
-      <section class="max-w-4xl mx-auto px-4 tracking-tight mb-12 flex flex-col md:flex-row text-zinc-800 dark:text-neutral-200">
-        <div class="flex-grow text-center md:text-left">
-          <h2 class="text-4xl font-bold">About Me</h2>
-          <div class="text-lg mt-4 mb-8 space-y-2">
+      <section className="max-w-4xl mx-auto px-4 tracking-tight mb-12 flex flex-col md:flex-row text-zinc-800 dark:text-neutral-200">
+        <div className="flex-grow text-center md:text-left">
+          <h2 className="text-4xl font-bold">About Me</h2>
+          <div className="text-lg mt-4 mb-8 space-y-2">
             <p>
               Hi, I'm Sheikh Foysal. I'm a Data Scientist living in Dhaka, Bangladesh,
               CA.
@@ -20,7 +20,7 @@ const AboutMe = () => {
         </div>
         <div>
           <Link
-            class="
+            className="
 					flex
 					w-fit
 					mx-auto
@@ -42,18 +42,18 @@ const AboutMe = () => {
 				"
             to="/about"
           >
-            <span class="tracking-tight font-semibold">More</span>
+            <span className="tracking-tight font-semibold">More</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
-              stroke-width="2"
+               strokeWidth="2"
               stroke="currentColor"
-              class="w-6 h-6"
+              className="w-6 h-6"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
               ></path>
             </svg>
