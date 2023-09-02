@@ -10,7 +10,7 @@ function Certification() {
       href="#certifications"
       className="flex text-2xl font-semibold items-center space-x-2 mb-4 group  "
     >
-      <h2 className=" ">Certifications</h2>
+      <h2 className="italic">Certifications</h2>
       <svg
         className="w-5 h-5 invisible group-hover:visible  "
         xmlns="http://www.w3.org/2000/svg"
