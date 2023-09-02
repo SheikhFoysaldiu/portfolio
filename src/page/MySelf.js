@@ -13,10 +13,10 @@ function MySelf() {
           <h1 className="text-4xl sm:text-6xl font-bold text-center mb-4  ">
             About Me
           </h1>
-          <li className="text-base">
+          <li className="text-base p-2">
           I am an accomplished Data Scientist with a proven track record of leveraging advanced statistical and machine learning techniques to extract valuable insights from large datasets. 
           </li>
-          <li className="text-base   ">
+          <li className="text-base p-2">
           My expertise lies in designing and implementing cutting-edge algorithms that drive actionable decisions and deliver tangible business results.
           </li>
         </div>
