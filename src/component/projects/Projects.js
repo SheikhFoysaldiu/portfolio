@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 import Divider from '../divider/Divider';
+import { Link } from 'react-router-dom';
 
 const SingleRepo = ({item}) =>{
     return(
@@ -75,7 +76,7 @@ function Projects() {
 			</ul>
 		</div>
 		<div>
-			<a class="
+			<Link class="
 					flex 
 					w-fit
 					mx-auto
@@ -94,14 +95,14 @@ function Projects() {
 					shadow-purple-500/50
 					hover:shadow-lg
 					hover:shadow-purple-500/50
-				" href="/projects">
+				" to="/projects">
 				<span class="tracking-tight font-semibold">
 					More projects
 				</span>
 				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
 					<path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"></path>
 				</svg>
-			</a>
+			</Link>
 		</div>
 	</section>
     <Divider/>
