@@ -10,8 +10,7 @@ const AboutMe = () => {
           <h2 className="text-4xl font-bold">About Me</h2>
           <div className="text-lg mt-4 mb-8 space-y-2">
             <p>
-              Hi, I'm Sheikh Foysal. I'm a Data Scientist living in Dhaka, Bangladesh,
-              CA.
+              Hi, I'm Sheikh Foysal. I'm a Data Scientist living in Dhaka, Bangladesh.
             </p>
             <p>
             As a Data Scientist, I leverage data analysis, machine learning, and statistical modeling to extract insights, build predictive models, and inform data-driven decisions, thus solving complex problems for organizations

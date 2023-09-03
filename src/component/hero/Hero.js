@@ -38,18 +38,10 @@ const Hero = () => {
 				lg:justify-items-end
 			"
         >
-          <div className="text-4xl sm:text-7xl font-extrabold font-sans mb-4 tracking-tight lg:tracking-normal text-neutral-900 dark:text-neutral-100">
-            Hello, My Name is
-            <h1 className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
-              <Typewriter
-                options={{
-                  strings: ["Sheikh Foysal"],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
-            </h1>
-          </div>
+      <h1 class="text-4xl sm:text-7xl font-extrabold font-sans mb-4 tracking-tight lg:tracking-normal text-neutral-900 dark:text-neutral-100">
+				Hello! I'm
+				<span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"> Sheikh Foysal</span>.
+			</h1>
 
           <p className="text-base sm:text-xl tracking-tight lg:justify-self-end text-neutral-900 dark:text-neutral-100">
             I'm a Data Scientist living in Dhaka, Bangladesh.

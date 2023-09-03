@@ -51,7 +51,14 @@ const Nav = () => {
             ></path>
           </svg>
           <span className="font-sans text-2xl font-semibold">
-            Sheikh Foysal
+          <Typewriter
+                options={{
+                  strings: ["Sheikh Foysal"],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            
           </span>
         </Link>
 
