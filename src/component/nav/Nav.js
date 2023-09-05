@@ -153,7 +153,7 @@ const Nav = () => {
         id="dropdown-nav"
         className={`block md:hidden ${isMobileMenuOpen ? "" : "hidden"}`}
       >
-        <ul class="list-none border rounded-lg space-y-4 px-4 py-5 w-36 absolute right-12 bg-neutral-50 shadow-lg transition-shadow delay-900 z-10">
+        <ul className="list-none border rounded-lg space-y-4 px-4 py-5 w-36 absolute right-12 bg-neutral-50 shadow-lg transition-shadow delay-900 z-10">
           <li>
           <Link
               to="/"

@@ -25,7 +25,7 @@ function ProjectPage() {
 
         const repositories = await response.json();
         setRepo(repositories);
-        console.log(repositories);
+        // console.log(repositories);
       } catch (error) {
         console.error("Error:", error);
       }
@@ -70,11 +70,15 @@ function ProjectPage() {
             repo.map((item) => (
               <Link
                 key={item.id}
-                to="https://github.com/a-poor/watercooler"
+                to={item.html_url}
                 className="
+                flex
+                flex-col
+                justify-between
+               
                 px-4
                 pt-4
-                pb-8
+                pb-4
                 border-[1px]
                 outline
                 sm:outline-none
@@ -85,10 +89,15 @@ function ProjectPage() {
                 dark:hover:bg-neutral-800
             "
               >
-                <h1 className="text-2xl font-semibold tracking-tight">
+                <div className="text-2xl font-bold tracking-tight">
                   {item.name}
-                </h1>
-                <p className="text-base">{item.description}</p>
+                </div>
+                <div className="text-base">{
+                item.description?.length > 150 ? item.description?.substr(0,150) + "...." : 
+                  item.description?.length === undefined ? "No Description added yet!" : item.description
+                }</div>
+                <br/>
+                <div className="italic"><span>Tags: </span>{item?.language}</div>
               </Link>
             ))}
         </div>

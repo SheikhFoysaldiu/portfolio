@@ -31,7 +31,7 @@ function Skills() {
 
     <ul className="list-disc list-inside space-y-1 text-base tracking-tight  ">
       <li className=" ">Python</li>
-      <li className=" ">Data Structure and Algorithm</li>
+      <li className=" ">DSA(Data Structure and Algorithm)</li>
       <li className=" ">JavaScript/TypeScript</li>
       <li className=" ">SQL</li>
       <li className=" ">REST APIs</li>

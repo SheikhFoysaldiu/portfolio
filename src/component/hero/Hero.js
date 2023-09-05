@@ -38,9 +38,9 @@ const Hero = () => {
 				lg:justify-items-end
 			"
         >
-      <h1 class="text-4xl sm:text-7xl font-extrabold font-sans mb-4 tracking-tight lg:tracking-normal text-neutral-900 dark:text-neutral-100">
+      <h1 className="text-4xl sm:text-7xl font-extrabold font-sans mb-4 tracking-tight lg:tracking-normal text-neutral-900 dark:text-neutral-100">
 				Hello! I'm
-				<span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"> Sheikh Foysal</span>.
+				<span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"> Sheikh Foysal</span>.
 			</h1>
 
           <p className="text-base sm:text-xl tracking-tight lg:justify-self-end text-neutral-900 dark:text-neutral-100">

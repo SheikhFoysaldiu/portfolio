@@ -6,14 +6,14 @@ import { Link } from 'react-router-dom';
 const SingleRepo = ({item}) =>{
     return(
         <li  className="my-4 md:border-l-4 border-neutral-200 dark:border-neutral-800 md:pl-2 hover:bg-neutral-200 dark:hover:bg-neutral-800">
-        <a className="" href="https://github.com/a-poor/watercooler">
+        <Link className="" to={item.html_url}>
             <h3 className="text-lg font-semibold underline decoration-dotted">
                 {item.name}
             </h3>
             <p className="text-sm tracking-tight">
                 {item.description}
             </p>
-        </a>
+        </Link>
         </li>
     )
 }
@@ -42,7 +42,7 @@ function Projects() {
 
         const repositories = await response.json();
         setRepo(repositories)
-        console.log(repositories)
+        // console.log(repositories)
 
     } catch (error) {
         console.error('Error:', error);
